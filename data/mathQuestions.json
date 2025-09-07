@@ -1,0 +1,150 @@
+{
+  "quiz": {
+    "title": "แบบทดสอบคณิตศาสตร์พื้นฐาน",
+    "description": "ข้อสอบคณิตศาสตร์ง่ายๆ 20 ข้อ",
+    "totalQuestions": 20,
+    "timeLimit": 30,
+    "questions": [
+      {
+        "id": 1,
+        "question": "7 + 8 = ?",
+        "options": ["14", "15", "16", "17"],
+        "correctAnswer": 1,
+        "explanation": "7 + 8 = 15"
+      },
+      {
+        "id": 2,
+        "question": "12 × 3 = ?",
+        "options": ["35", "36", "37", "38"],
+        "correctAnswer": 1,
+        "explanation": "12 × 3 = 36"
+      },
+      {
+        "id": 3,
+        "question": "45 ÷ 5 = ?",
+        "options": ["8", "9", "10", "11"],
+        "correctAnswer": 1,
+        "explanation": "45 ÷ 5 = 9"
+      },
+      {
+        "id": 4,
+        "question": "23 - 9 = ?",
+        "options": ["13", "14", "15", "16"],
+        "correctAnswer": 1,
+        "explanation": "23 - 9 = 14"
+      },
+      {
+        "id": 5,
+        "question": "6² = ?",
+        "options": ["32", "34", "36", "38"],
+        "correctAnswer": 2,
+        "explanation": "6² = 6 × 6 = 36"
+      },
+      {
+        "id": 6,
+        "question": "√64 = ?",
+        "options": ["6", "7", "8", "9"],
+        "correctAnswer": 2,
+        "explanation": "√64 = 8"
+      },
+      {
+        "id": 7,
+        "question": "15 + 27 = ?",
+        "options": ["41", "42", "43", "44"],
+        "correctAnswer": 1,
+        "explanation": "15 + 27 = 42"
+      },
+      {
+        "id": 8,
+        "question": "8 × 7 = ?",
+        "options": ["54", "55", "56", "57"],
+        "correctAnswer": 2,
+        "explanation": "8 × 7 = 56"
+      },
+      {
+        "id": 9,
+        "question": "72 ÷ 8 = ?",
+        "options": ["8", "9", "10", "11"],
+        "correctAnswer": 1,
+        "explanation": "72 ÷ 8 = 9"
+      },
+      {
+        "id": 10,
+        "question": "35 - 17 = ?",
+        "options": ["17", "18", "19", "20"],
+        "correctAnswer": 1,
+        "explanation": "35 - 17 = 18"
+      },
+      {
+        "id": 11,
+        "question": "4 × 9 = ?",
+        "options": ["34", "35", "36", "37"],
+        "correctAnswer": 2,
+        "explanation": "4 × 9 = 36"
+      },
+      {
+        "id": 12,
+        "question": "100 ÷ 4 = ?",
+        "options": ["24", "25", "26", "27"],
+        "correctAnswer": 1,
+        "explanation": "100 ÷ 4 = 25"
+      },
+      {
+        "id": 13,
+        "question": "3³ = ?",
+        "options": ["25", "26", "27", "28"],
+        "correctAnswer": 2,
+        "explanation": "3³ = 3 × 3 × 3 = 27"
+      },
+      {
+        "id": 14,
+        "question": "√49 = ?",
+        "options": ["6", "7", "8", "9"],
+        "correctAnswer": 1,
+        "explanation": "√49 = 7"
+      },
+      {
+        "id": 15,
+        "question": "26 + 38 = ?",
+        "options": ["62", "63", "64", "65"],
+        "correctAnswer": 2,
+        "explanation": "26 + 38 = 64"
+      },
+      {
+        "id": 16,
+        "question": "9 × 6 = ?",
+        "options": ["52", "53", "54", "55"],
+        "correctAnswer": 2,
+        "explanation": "9 × 6 = 54"
+      },
+      {
+        "id": 17,
+        "question": "84 ÷ 7 = ?",
+        "options": ["11", "12", "13", "14"],
+        "correctAnswer": 1,
+        "explanation": "84 ÷ 7 = 12"
+      },
+      {
+        "id": 18,
+        "question": "50 - 23 = ?",
+        "options": ["26", "27", "28", "29"],
+        "correctAnswer": 1,
+        "explanation": "50 - 23 = 27"
+      },
+      {
+        "id": 19,
+        "question": "5² + 3² = ?",
+        "options": ["32", "33", "34", "35"],
+        "correctAnswer": 2,
+        "explanation": "5² + 3² = 25 + 9 = 34"
+      },
+      {
+        "id": 20,
+        "question": "12 × 8 ÷ 4 = ?",
+        "options": ["22", "23", "24", "25"],
+        "correctAnswer": 2,
+        "explanation": "12 × 8 ÷ 4 = 96 ÷ 4 = 24"
+      }
+    ]
+  }
+}

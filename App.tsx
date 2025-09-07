@@ -1,16 +1,25 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
+ * Quiz App with Navigation
+ * Math Quiz Application with Complete Navigation
  *
  * @format
  */
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+import React from 'react';
+import { StatusBar, useColorScheme } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {
   SafeAreaProvider,
-  useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+
+// Import screens
+import HomeScreen from './src/screens/HomeScreen';
+import QuizScreen from './src/screens/QuizScreen';
+import ResultScreen from './src/screens/ResultScreen';
+import LeaderboardScreen from './src/screens/LeaderboardScreen';
+
+const Stack = createNativeStackNavigator();
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -18,28 +27,41 @@ function App() {
   return (
     <SafeAreaProvider>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
+      <NavigationContainer>
+        <Stack.Navigator 
+          initialRouteName="Home"
+          screenOptions={{
+            headerShown: false, // ซ่อน header เพราะเรามี custom header ใน component
+            animation: 'slide_from_right',
+          }}
+        >
+          <Stack.Screen 
+            name="Home" 
+            component={HomeScreen}
+            options={{ title: 'หน้าหลัก' }}
+          />
+          <Stack.Screen 
+            name="Quiz" 
+            component={QuizScreen}
+            options={{ title: 'ทำข้อสอบ' }}
+          />
+          <Stack.Screen 
+            name="Result" 
+            component={ResultScreen}
+            options={{ 
+              title: 'ผลคะแนน',
+              gestureEnabled: false, // ป้องกันการ swipe back
+            }}
+          />
+          <Stack.Screen 
+            name="Leaderboard" 
+            component={LeaderboardScreen}
+            options={{ title: 'อันดับคะแนน' }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
     </SafeAreaProvider>
   );
 }
-
-function AppContent() {
-  const safeAreaInsets = useSafeAreaInsets();
-
-  return (
-    <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default App;
