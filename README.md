@@ -1,5 +1,5 @@
 
-# MyReactNativeApp
+# Math Quiz App
 
 แอปพลิเคชัน React Native สำหรับแบบทดสอบคณิตศาสตร์และระบบ Leaderboard
 
